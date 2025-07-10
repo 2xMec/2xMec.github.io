@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <link rel="stylesheet" href="görseller.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">TEMAS
+            <p>Teknik Makina Sanayi</p>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="Temas.html">Ana Sayfa</a></li>
+                <li class="nav-item"><a class="nav-link" href="görseller.html">Hizmetlerimiz</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-center bg-light py-5">
+    <div class="container">
+        <h1 class="display-4"><strong>HİZMETLERİMİZ</strong></h1>
+        <p class="lead">Hizmetlerimize dair görselleri burada inceleyebilirsiniz.</p>
+    </div>
+</section>
+
+<!-- Galeri -->
+<section class="image-gallery py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Teknik Galeri</h2>
+        <h4 class="text-center text-muted mb-4">Hizmetlerimizden bazı örnekler</h4>
+        <div class="row g-3">
+            <!-- İlk Resim Grubu -->
+            <div class="col-6 col-md-3">
+                <img src="1.jpg" alt="Galeri Resmi 1" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="2.jpg" alt="Galeri Resmi 2" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="3.jpg" alt="Galeri Resmi 3" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="4.jpg" alt="Galeri Resmi 4" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+        </div>
+        <div class="row g-3 mt-4">
+            <!-- İkinci Resim Grubu -->
+            <div class="col-6 col-md-3">
+                <img src="5.jpg" alt="Galeri Resmi 5" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="6.jpg" alt="Galeri Resmi 6" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="8.jpg" alt="Galeri Resmi 7" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="9.jpg" alt="Galeri Resmi 8" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+        </div>
+        <div class="row g-3 mt-4">
+            <!-- İkinci Resim Grubu -->
+            <div class="col-6 col-md-3">
+                <img src="10.jpg" alt="Galeri Resmi 5" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="11.jpg" alt="Galeri Resmi 6" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="12.jpg" alt="Galeri Resmi 7" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="13.JPEG" alt="Galeri Resmi 8" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+        </div>
+        <div class="row g-3 mt-4">
+            <!-- İkinci Resim Grubu -->
+            <div class="col-6 col-md-3">
+                <img src="14.JPEG" alt="Galeri Resmi 5" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="15.JPEG" alt="Galeri Resmi 6" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="16.JPEG" alt="Galeri Resmi 7" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="17.JPEG" alt="Galeri Resmi 8" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+        </div>
+        <div class="row g-3 mt-4">
+            <!-- İkinci Resim Grubu -->
+            <div class="col-6 col-md-3">
+                <img src="18.JPEG" alt="Galeri Resmi 5" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="19.JPEG" alt="Galeri Resmi 6" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="20.JPEG" alt="Galeri Resmi 7" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="21.JPEG" alt="Galeri Resmi 8" class="img-fluid rounded shadow-sm" onclick="openModal(this)">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="imageModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal(event)">&times;</span>
+        <img id="modalImage" class="modal-image">
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Temas Makine. Tüm Hakları Saklıdır.</p>
+        <div class="social-icons">
+            <a href="#" class="text-white mx-2">Facebook</a>
+            <a href="#" class="text-white mx-2">Twitter</a>
+            <a href="#" class="text-white mx-2">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function openModal(imgElement) {
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+        modal.style.display = "flex";
+        modalImage.src = imgElement.src;
+    }
+
+    function closeModal(event) {
+        const modal = document.getElementById("imageModal");
+        if (event.target === modal || event.target.classList.contains("close-btn")) {
+            modal.style.display = "none";
+        }
+    }
+
+    const modal = document.getElementById("imageModal");
+    modal.addEventListener("click", closeModal);
+</script>
+
+</body>
+</html>
+
+
